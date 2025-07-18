@@ -7,60 +7,44 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <nav>
+  <nav id="navbar">
+    <div class="logo">Your Name</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+      <a href="#work">Work</a>
       <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Hi, I'm Your Name</h2>
-    <p>A passionate web developer and creative problem solver.</p>
-    <a href="#projects" class="btn">See My Work</a>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm a front-end developer who loves building sleek, responsive websites.
-      I specialize in HTML, CSS, and JavaScript, and I enjoy learning new
-      technologies like React, Tailwind, and more.
-    </p>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="card">
-        <img src="images/project1.jpg" alt="Project 1">
-        <h3>Portfolio Website</h3>
-        <p>A clean personal site showcasing my work and skills.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="card">
-        <img src="images/project2.jpg" alt="Project 2">
-        <h3>Weather App</h3>
-        <p>Built with vanilla JS and an open weather API.</p>
-        <a href="#">View Project</a>
-      </div>
     </div>
-  </section>
+  </nav>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Reach out to me via email or social media.</p>
-    <ul>
-      <li>Email: you@example.com</li>
-      <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-    </ul>
-  </section>
+  <main id="smooth-wrapper">
+    <section id="home" class="panel">
+      <h1 class="fade-up">Hi, I'm <span>Your Name</span></h1>
+      <p class="fade-up">A Creative Developer & Designer</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+    <section id="about" class="panel">
+      <h2 class="fade-up">About Me</h2>
+      <p class="fade-up">I create immersive web experiences with a focus on elegant design and interactive motion.</p>
+    </section>
+
+    <section id="work" class="panel">
+      <h2 class="fade-up">Selected Work</h2>
+      <div class="project-gallery fade-up">
+        <div class="project-card">Project One</div>
+        <div class="project-card">Project Two</div>
+        <div class="project-card">Project Three</div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2 class="fade-up">Let's Talk</h2>
+      <p class="fade-up">you@example.com</p>
+    </section>
+  </main>
+
+  <script src="libs/gsap.min.js"></script>
+  <script src="libs/lenis.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
