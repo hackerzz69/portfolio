@@ -13,10 +13,7 @@ This is a sleek, fully responsive personal portfolio website built using HTML5 a
 
 ## 📁 File Structure
 
-/
-├── index.html # Main landing page
-├── style.css # Custom styling
-└── images/ # Project images or illustrations
+<pre> ```text / ├── index.html # Main landing page ├── style.css # Custom styling └── images/ # Project images or illustrations ``` </pre>
 
 ## 🌐 Live Demo
 
