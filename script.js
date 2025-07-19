@@ -1,16 +1,15 @@
-// Splash Screen Hide After Load
 window.addEventListener('load', () => {
   setTimeout(() => {
     const splash = document.getElementById('splash-screen');
     splash.style.opacity = '0';
     splash.style.visibility = 'hidden';
+    splash.style.pointerEvents = 'none';
+    splash.style.display = 'none';
     document.body.style.overflow = 'auto';
-    document.body.classList.add('loaded'); // fade in content
-  }, 2000); // 2 second splash
+    document.body.classList.add('loaded');
+  }, 5000);
 });
 
-
-// Lenis Smooth Scroll Init
 const lenis = new Lenis();
 function raf(time) {
   lenis.raf(time);
@@ -18,8 +17,7 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-// GSAP + ScrollTrigger Setup
-gsap.registerPlugin(ScrollTrigger); // ✅ Make sure ScrollTrigger is registered!
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray('.fade-up').forEach((el) => {
   gsap.from(el, {
