@@ -10,7 +10,11 @@ window.addEventListener('load', () => {
   }, 5000);
 });
 
-const lenis = new Lenis();
+const lenis = new Lenis({
+  wrapper: document.querySelector('#smooth-wrapper'),
+  content: document.querySelector('main'),
+  smooth: true
+});
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
