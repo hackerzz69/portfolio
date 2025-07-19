@@ -1,4 +1,3 @@
-/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,7 @@ html, body {
   background: #0d0d0d;
   color: #fff;
   scroll-behavior: smooth;
-  overflow: hidden; /* Prevent scroll before splash ends */
+  overflow: hidden;
 }
 
 body.loaded #smooth-wrapper {
@@ -23,8 +22,6 @@ body.loaded #smooth-wrapper {
   opacity: 0;
 }
 
-
-/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -49,7 +46,6 @@ nav {
   font-weight: bold;
 }
 
-/* Panels */
 .panel {
   height: 100vh;
   padding: 6rem 4rem;
@@ -74,7 +70,6 @@ nav {
   max-width: 500px;
 }
 
-/* Projects */
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +93,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* Splash Screen */
 #splash-screen {
   position: fixed;
   z-index: 9999;
@@ -143,7 +137,6 @@ nav {
   }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .panel h1,
   .panel h2 {
