@@ -9,7 +9,12 @@ window.addEventListener('load', () => {
     document.body.classList.add('loaded');
   }, 3000);
 });
-const lenis = new Lenis({ smooth: true });
+const lenis = new Lenis({
+  smooth: true,
+  lerp: 0.15, // ⬅️ Higher = faster/snappier scroll (default is 0.1)
+  smoothTouch: false // ⬅️ Optional: disable extra smoothing on mobile
+});
+
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
