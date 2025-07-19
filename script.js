@@ -7,22 +7,15 @@ window.addEventListener('load', () => {
     splash.style.display = 'none';
     document.body.style.overflow = 'auto';
     document.body.classList.add('loaded');
-  }, 5000);
+  }, 3000);
 });
-
-const lenis = new Lenis({
-  wrapper: document.querySelector('#smooth-wrapper'),
-  content: document.querySelector('main'),
-  smooth: true
-});
+const lenis = new Lenis({ smooth: true });
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
-
 gsap.registerPlugin(ScrollTrigger);
-
 gsap.utils.toArray('.fade-up').forEach((el) => {
   gsap.from(el, {
     y: 60,
