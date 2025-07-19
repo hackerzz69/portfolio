@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
 });
 const lenis = new Lenis({
   smooth: true,
-  lerp: 0.15, // ⬅️ Higher = faster/snappier scroll (default is 0.1)
+  lerp: 0.5, // ⬅️ Higher = faster/snappier scroll (default is 0.1)
   smoothTouch: false // ⬅️ Optional: disable extra smoothing on mobile
 });
 
