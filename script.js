@@ -1,10 +1,14 @@
 // Splash Screen Hide After Load
 window.addEventListener('load', () => {
-  const splash = document.getElementById('splash-screen');
-  splash.style.opacity = '0';
-  splash.style.visibility = 'hidden';
-  document.body.style.overflow = 'auto'; // re-enable scroll
+  setTimeout(() => {
+    const splash = document.getElementById('splash-screen');
+    splash.style.opacity = '0';
+    splash.style.visibility = 'hidden';
+    document.body.style.overflow = 'auto';
+    document.body.classList.add('loaded'); // fade in content
+  }, 2000); // 2 second splash
 });
+
 
 // Lenis Smooth Scroll Init
 const lenis = new Lenis();
