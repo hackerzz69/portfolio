@@ -10,7 +10,6 @@ html, body {
   background: #0d0d0d;
   color: #fff;
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 body.loaded #smooth-wrapper {
