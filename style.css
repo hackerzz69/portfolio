@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
   height: 100%;
   font-family: 'Helvetica Neue', sans-serif;
@@ -11,16 +10,13 @@ html, body {
   color: #fff;
   scroll-behavior: smooth;
 }
-
-body.loaded #smooth-wrapper {
+body.loaded main {
   opacity: 1;
   transition: opacity 1s ease;
 }
-
-#smooth-wrapper {
+main {
   opacity: 0;
 }
-
 nav {
   position: fixed;
   top: 0;
@@ -32,19 +28,16 @@ nav {
   z-index: 10;
   mix-blend-mode: difference;
 }
-
 .nav-links a {
   color: white;
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: 300;
 }
-
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .panel {
   height: 100vh;
   padding: 6rem 4rem;
@@ -53,29 +46,24 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
-
 .panel:nth-child(even) {
   background: #111;
 }
-
 .panel h1,
 .panel h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
 .panel p {
   font-size: 1.2rem;
   max-width: 500px;
 }
-
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2rem;
 }
-
 .project-card {
   background: #1a1a1a;
   padding: 2rem;
@@ -87,11 +75,9 @@ nav {
   border: 1px solid #333;
   transition: transform 0.3s ease;
 }
-
 .project-card:hover {
   transform: scale(1.05);
 }
-
 #splash-screen {
   position: fixed;
   z-index: 9999;
@@ -106,25 +92,21 @@ nav {
   justify-content: center;
   transition: opacity 1s ease, visibility 1s ease;
 }
-
 .splash-content {
   animation: fadeIn 1.5s ease-out forwards;
 }
-
 .splash-title {
   font-size: 2.5rem;
   letter-spacing: 2px;
   opacity: 0;
   animation: textAppear 1.2s ease forwards 0.5s;
 }
-
 @keyframes textAppear {
   to {
     opacity: 1;
     transform: scale(1.05);
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -135,32 +117,26 @@ nav {
     transform: scale(1);
   }
 }
-
 @media (max-width: 768px) {
   .panel h1,
   .panel h2 {
     font-size: 2rem;
   }
-
   .panel p {
     font-size: 1rem;
   }
-
   .project-card {
     width: 100%;
     height: auto;
   }
-
   .project-gallery {
     flex-direction: column;
     align-items: center;
   }
-
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .nav-links a {
     margin-left: 0;
     margin-top: 0.5rem;
