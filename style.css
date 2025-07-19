@@ -81,3 +81,48 @@ nav {
 .project-card:hover {
   transform: scale(1.05);
 }
+
+#splash-screen {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.splash-content {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.splash-title {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: textAppear 1.2s ease forwards 0.5s;
+}
+
+@keyframes textAppear {
+  to {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
